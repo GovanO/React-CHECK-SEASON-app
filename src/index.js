@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import SeasonDisplay from './SeasonDisplay';
 import Loader from './Loader';
 
+const hello = 'hello';
+const world = 'world';
+
 class App extends React.Component {
     state = { lat: null, errorMessage: '' }; 
 
@@ -21,11 +24,11 @@ class App extends React.Component {
             return <SeasonDisplay lat={this.state.lat}/>;
         }
         return <Loader  message="Please accept location request" />
-    }
+    }s
 
     render() {
         return (
-            <div className="border red">{this.renderContent()}</div>
+            <div>{this.renderContent()}</div>
         )
     }
 }

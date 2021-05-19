@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import SeasonDisplay from './SeasonDisplay';
 import Loader from './Loader';
 
+const hello = 'hello';
+const world = 'world';
+
 class App extends React.Component {
     state = { lat: null, errorMessage: '' }; 
 
